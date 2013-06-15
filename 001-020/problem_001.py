@@ -1,7 +1,9 @@
 #
-# Problem: 1
-# Question: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
-# 			The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+# Problem: 001
+# 
+# Question: 
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+# The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
 #
 # Answer: 233168
 
@@ -26,5 +28,5 @@ print mult5
 	
 # union of the sets
 mults = mult3 | mult5
-mults_sum = sum(mults)
-print mults_sum
+ans = sum(mults)
+print ans

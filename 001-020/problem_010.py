@@ -1,7 +1,9 @@
 #
-# Problem: 10
-# Question: The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
-# 			Find the sum of all the primes below two million.
+# Problem: 010
+# 
+# Question: 
+# The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+# Find the sum of all the primes below two million.
 #
 # Answer: 142913828922
 
@@ -18,4 +20,6 @@ while value < lim:
             marked[i] = True
             i = i + value
     value = value + 2
-print s
+
+ans = s
+print ans

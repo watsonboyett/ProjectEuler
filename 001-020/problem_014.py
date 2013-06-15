@@ -1,6 +1,8 @@
 #
 # Problem: 014
-# Question: The following iterative sequence is defined for the set of positive integers:
+#
+# Question: 
+# The following iterative sequence is defined for the set of positive integers:
 # n -> n/2 (n is even)
 # n -> 3n + 1 (n is odd)
 # Using the rule above and starting with 13, we generate the following sequence:

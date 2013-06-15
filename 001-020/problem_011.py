@@ -1,6 +1,8 @@
 #
-# Problem: 11
-# Question: In the 2020 grid below, four numbers along a diagonal line have been marked in [red].
+# Problem: 011
+# 
+# Question: 
+# In the 2020 grid below, four numbers along a diagonal line have been marked in [red].
 # 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 # 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 # 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
@@ -101,4 +103,5 @@ for r in xrange(0, row_n-src_n+1):
 		if p > prod:
 			prod = p
 
-print prod
+ans = prod
+print ans

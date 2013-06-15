@@ -1,5 +1,6 @@
 #
 # Problem: 018
+#
 # Question: Too long to include here...
 #
 # Answer: 1074
@@ -7,11 +8,7 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-tri1 = [ \
-[75], \
-[95,64], \
-[17,47,82]]
-
+# construct the number triangle
 tri = [ \
 [75], \
 [95,64], \
@@ -29,7 +26,7 @@ tri = [ \
 [63,66,4,68,89,53,67,30,73,16,69,87,40,31], \
 [4,62,98,27,23,9,70,98,73,93,38,53,60,4,23]]
 
-
+# build graph for easy traversal
 edgeMax = max([max(x) for x in tri])
 
 G = nx.DiGraph()

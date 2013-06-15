@@ -1,6 +1,8 @@
 #
-# Problem: 8
-# Question: Find the greatest product of five consecutive digits in the 1000-digit number.
+# Problem: 008
+#
+# Question: 
+# Find the greatest product of five consecutive digits in the 1000-digit number.
 #73167176531330624919225119674426574742355349194934
 #96983520312774506326239578318016984801869478851843
 #85861560789112949495459501737958331952853208805511
@@ -38,4 +40,5 @@ for i in xrange(0, len(number)-digits+1):
 	if p > prod:
 		prod = p
 		
-print prod
+ans = prod
+print ans
