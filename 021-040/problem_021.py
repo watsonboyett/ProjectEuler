@@ -8,13 +8,32 @@
 # The proper divisors of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.
 # Evaluate the sum of all the amicable numbers under 10000.
 #
-# Answer:
+# Answer: 31626
 
 
-N = 10000
+# setup import path to 'utils' folder
+import os, sys
+file_dir = os.path.dirname(sys.argv[0])
+lib_path = os.path.abspath(os.path.join(file_dir,'..','utils'))
+sys.path.append(lib_path)
+
+import PrimeUtils
 
 
+amic_UB = 10000
+amic_nums = []
+primes = PrimeUtils.primes(amic_UB*2)
+for n in range(4, amic_UB):
+	b = PrimeUtils.proper_divs_sum(n, primes)
+	if b <= 1:
+		continue
+	a = PrimeUtils.proper_divs_sum(b, primes)
+	
+	if n == a and b != a:
+		amic_nums.append(n)
 
-
+amic_sum = sum(amic_nums)
+ans = amic_sum
+print ans
 
 
